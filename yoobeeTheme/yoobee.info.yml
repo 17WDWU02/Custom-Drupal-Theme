@@ -10,3 +10,11 @@ libraries:
 stylesheets-remove:
  - '@stable/css/system/components/align.module.css'
  - '@stable/css/views/views.module.css'
+
+regions:
+ header: 'Header Left'
+ header_right: 'Header Right'
+ navigation: 'Main Navigation'
+ sidebar: 'Sidebar'
+ content: 'Main Content'
+ footer: 'Footer'

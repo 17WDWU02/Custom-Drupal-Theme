@@ -1,0 +1,43 @@
+<div class="container">
+	<header role="banner">
+		<div class="pull-left">
+			{{ page.header }}
+		</div>
+		<div class="pull-right">
+			{{ page.header_right }}
+		</div>
+	</header>
+</div>
+
+
+{{ page.navigation}}
+
+<div class="main-header"></div>
+
+<div class="container">
+
+	<h1>This is the home page</h1>
+	<main role="main">
+		<a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+
+		<div class="row">
+			<!-- main content -->
+			<div class="col-xs-12">
+				<div class="layout-content">
+					{{ page.content }}
+				</div>
+			</div>
+
+		</div>
+
+	</main>
+
+</div>
+
+{% if page.footer %}
+	<footer class="footer" role="contentinfo">
+		<div class="container">
+			{{ page.footer }}
+		</div>
+	</footer>
+{% endif %}
