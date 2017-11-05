@@ -1,28 +1,27 @@
-<header role="banner">
-	{{ page.header }}
-</header>
-
-
+{% include directory ~ '/partials/header.html.twig' %}
 
 <div class="container">
-
-	{{ page.navigation}}
 
 	<main role="main">
 		<a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
 		<div class="row">
 			<!-- sidebar -->
+			{% if page.sidebar %}
 			<div class="col-xs-12 col-sm-4 well">
-				{% if page.sidebar %}
 					<aside class="layout-sidebar-first" role="complementary">
-						{{ page.sidebar }}
+						
 					</aside>
 				{% endif %}
 			</div>
+			{{ page.sidebar }}
 
 			<!-- main content -->
+			{% if page.sidebar %}
 			<div class="col-xs-12 col-sm-8">
+			{% else %}
+			<div class="col-xs-12">
+			{% endif %}
 				<div class="layout-content">
 					{{ page.content }}
 				</div>
@@ -34,10 +33,4 @@
 
 </div>{# /.layout-container #}
 
-{% if page.footer %}
-	<footer class="footer" role="contentinfo">
-		<div class="container">
-			{{ page.footer }}
-		</div>
-	</footer>
-{% endif %}
+{% include directory ~ '/partials/footer.html.twig' %}

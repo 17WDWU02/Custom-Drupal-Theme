@@ -1,16 +1,4 @@
-<div class="container">
-	<header role="banner">
-		<div class="pull-left">
-			{{ page.header }}
-		</div>
-		<div class="pull-right">
-			{{ page.header_right }}
-		</div>
-	</header>
-</div>
-
-
-{{ page.navigation}}
+{% include directory ~ '/partials/header.html.twig' %}
 
 <div class="main-header"></div>
 
@@ -34,10 +22,5 @@
 
 </div>
 
-{% if page.footer %}
-	<footer class="footer" role="contentinfo">
-		<div class="container">
-			{{ page.footer }}
-		</div>
-	</footer>
-{% endif %}
+{% include directory ~ '/partials/footer.html.twig' %}
+

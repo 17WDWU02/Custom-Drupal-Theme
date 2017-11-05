@@ -39,5 +39,19 @@ body {
 	text-transform: uppercase;
 }
 
+.content-title a{
+  text-transform: uppercase;
+}
 
+.course-block{
+  background-color: #bdc3c7;
+  box-sizing:border-box;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.body-content{
+  text-transform: lowercase;
+  padding-top: 1em;
+}
 
