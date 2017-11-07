@@ -15,6 +15,7 @@ regions:
  header: 'Header Left'
  header_right: 'Header Right'
  navigation: 'Main Navigation'
+ subnaviation: 'Secondary Navigation'
  sidebar: 'Sidebar'
  content: 'Main Content'
  footer: 'Footer'

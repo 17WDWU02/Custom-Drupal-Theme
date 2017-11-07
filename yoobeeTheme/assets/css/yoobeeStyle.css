@@ -55,3 +55,65 @@ body {
   padding-top: 1em;
 }
 
+.views-field-field-main-image img{
+  max-width: 100%;
+}
+
+#SecondNav{
+  padding: 0;
+}
+
+.navbar .navbar-courses {
+	display: table;
+	float: none;
+	width: 100%;
+}
+
+.navbar .navbar-collapse {
+	text-align: center;
+}
+
+.navbar-courses li{
+	height: 6em;
+	display: table-cell;
+	width: 14.28%;
+	float: none;
+	text-align: center;
+    vertical-align: middle;
+}
+
+.navbar-courses li a{
+  color: white;
+  text-transform: uppercase;
+  
+  font-weight: bold;
+}
+
+.navbar-courses li:nth-child(1) {
+  background-color: #9b9b9b;
+}
+
+.navbar-courses li:nth-child(2) {
+  background-color: #e47610;
+}
+
+.navbar-courses li:nth-child(3) {
+  background-color: #7d5cc6;
+}
+
+.navbar-courses li:nth-child(4) {
+  background-color: #7ab800;
+}
+
+.navbar-courses li:nth-child(5) {
+  background-color: #fecb00;
+}
+
+.navbar-courses li:nth-child(6) {
+  background-color: #0cc6de;
+}
+
+.navbar-courses li:nth-child(7) {
+  background-color: #994179;
+}
+
