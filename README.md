@@ -31,11 +31,9 @@ You now need to tell drupal to register a new local settings file has been creat
 Uncomment lines **787** to **789**
 It should now look like this
 ```php
- $settings['trusted_host_patterns'] = array(
     if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
         include $app_root . '/' . $site_path . '/settings.local.php';
     }
- );
 ```
 
 When you save this file it may ask for your password. It it does then go into finder and turn that one file to read and write privileges.
